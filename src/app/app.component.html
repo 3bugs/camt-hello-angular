@@ -21,4 +21,7 @@
   <button [disabled]="!title" class="btn btn-success" (click)="handleClickButton()">
     Next Caption
   </button>
+  <button *ngIf="!title" class="btn btn-danger" (click)="handleClickReset()">
+    Reset
+  </button>
 </div>

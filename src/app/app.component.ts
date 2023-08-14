@@ -63,6 +63,10 @@ export class AppComponent {
     this.title = this.randomCaption()?.message;
   }
 
+  handleClickReset() {
+    this.usedCaptionList.length = 0;
+  }
+
   private getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
   }
